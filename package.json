@@ -4,7 +4,7 @@
   "description": "A CSS Framework flex oriented",
   "scripts": {
     "watch": "./node_modules/.bin/stylus -w ./src",
-    "build": "./node_modules/.bin/stylus ./src -o ./dist -cm",
+    "build": "./node_modules/.bin/stylus -c ./src -o ./dist -m",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
