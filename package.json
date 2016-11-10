@@ -1,0 +1,27 @@
+{
+  "name": "flexy-css",
+  "version": "1.0.0",
+  "description": "A CSS Framework flex oriented",
+  "scripts": {
+    "watch": "./node_modules/.bin/stylus -w ./src",
+    "build": "./node_modules/.bin/stylus ./src -o ./dist -cm",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Purexo/FlexyCSS.git"
+  },
+  "keywords": [
+    "css",
+    "flex"
+  ],
+  "author": "Purexo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Purexo/FlexyCSS/issues"
+  },
+  "homepage": "https://github.com/Purexo/FlexyCSS#readme",
+  "devDependencies": {
+    "stylus": "^0.54.5"
+  }
+}

@@ -1,0 +1,87 @@
+.flex
+    display: flex
+
+    // Container direction
+    &.fd-r
+        flex-direction: row
+    &.fd-rr
+        flex-direction: row-reverse
+    &.fd-c
+        flex-direction: column
+    &.fd-cr
+        flex-direction: column-reverse
+    
+    // Element wrapping in Container
+    &.fw-nw
+        flex-wrap: nowrap
+    &.fw-w
+        flex-wrap: wrap
+    &.fw-wr
+        flex-wrap: wrap-reverse
+    
+    // Justify Content in Container
+    &.jc-fs
+        justify-content: flex-start
+    &.jc-fe
+        justify-content: flex-end
+    &.jc-c
+        justify-content: center
+    &.jc-sb
+        justify-content: space-between
+    &.jc-sa
+        justify-content: space-around
+    
+    // Align Items in Container
+    &.ai-fs
+        align-items: flex-start
+    &.ai-fe
+        align-items: flex-end
+    &.ai-c
+        align-items: center
+    &.ai-b
+        align-items: baseline
+    &.ai-s
+        align-items: stretch
+    
+    // Align Content in Container
+    &.ac-fs
+        align-content: flex-start
+    &.ac-fe
+        align-content: flex-end
+    &.ac-c
+        align-content: center
+    &.ac-sb
+        align-content: space-between
+    &.ac-sa
+        align-content: space-around
+    &.ac-s
+        align-content: stretch
+    
+    // Align Self in Container
+    > .as-a
+        align-self: auto
+    > .as-fs
+        align-self: flex-start
+    > .as-fe
+        align-self: flex-end
+    > .as-c
+        align-self: center
+    > .as-b
+        align-self: baseline
+    > .as-s
+        align-self: stretch
+    
+    // --- for future : https://developer.mozilla.org/en-US/docs/Web/CSS/attr#Browser_compatibility --- //
+
+    > [order]
+        order: attr(order)
+    > [flex-grow]
+        flex-grow: attr(flex-grow)
+    > [flex-shrink]
+        flex-shrink: attr(flex-shrink)
+    > [flex-basis]
+        flex-basis: attr(flex-basis)
+    > [flex]
+        order: attr(flex)
+    > [align-self]
+        align-self: attr(align-self)
